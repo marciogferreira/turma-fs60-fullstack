@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Local Storage - Página 1</h2>
+    <button onclick="removerToken()">
+        Remover Token
+    </button>
+    <script>
+        function removerToken() {
+            localStorage.removeItem('token')
+        }
+        // Local Storage - Funcao do JS
+        // localStorage.setItem('token', '0kofi4094f4f4f')
+
+        const token = localStorage.getItem('token')
+        document.write(token)
+    </script>
+</body>
+</html>
